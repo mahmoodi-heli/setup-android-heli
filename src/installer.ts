@@ -104,6 +104,7 @@ export async function installAndroidSdk(
       `build-tools;${buildToolsVersion}`,
       'platform-tools',
       ...sdkVersionCommand,
+      'cmdline-tools;latest',
       '--verbose'
     ],
     {silent: !core.isDebug()}

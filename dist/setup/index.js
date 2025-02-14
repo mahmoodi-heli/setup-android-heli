@@ -69397,6 +69397,7 @@ function installAndroidSdk(sdkVersion, buildToolsVersion, ndkVersion, cmakeVersi
             `build-tools;${buildToolsVersion}`,
             'platform-tools',
             ...sdkVersionCommand,
+            'cmdline-tools;latest',
             '--verbose'
         ], { silent: !core.isDebug() });
         core.info(`success install build-tools:${buildToolsVersion} and platform-tools and skd:${sdkVersion}`);
